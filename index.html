@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card border-dark m-3 " style="max-width:50rm;">
+            <div class="card-header text-center ">Registro de usuario</div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-xl-6 col-6 col-md-6 col-sm-6 col-6">
+                        <img class="img-fluid" src="https://p4s.co/img/foto/f-369-1594694938352.jpg" alt="user">
+                    </div>
+                    <div class="col-xl-6 col-6 col-md-6 col-sm-6 col-6">
+                        <input type="number" placeholder="Ingrese Cedula" id="cedula" class="form-control m-2">
+                        <input type="text" placeholder="Ingrese Nombre" id="nombre" class="form-control m-2">
+                        <input type="text" placeholder="Ingrese Apellido" id="apellido" class="form-control m-2">
+                        <input type="text" placeholder="Ingrese Pais" id="pais" class="form-control m-2">
+                        <input type="text" placeholder="Ingrese Ciudad" id="ciudad" class="form-control m-2">
+                        <input type="text" placeholder="Ingrese Direccion" id="direccion" class="form-control m-2">
+                        <input type="number" placeholder="Ingrese Edad" id="edad" class="form-control m-2">
+                        <input type="number" placeholder="Ingrese Telefono" id="telefono" class="form-control m-2">
+                        <button class="btn btn-outline-success" onclick="registrar()">Registro</button>
+                        <button class="btn btn-outline-primary" onclick="listar()">Listar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tabla" class="row">
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+
+                        <th>cedula</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Pais</th>
+                        <th>Ciudad</th>
+                        <th>Direccion</th>
+                        <th>Edad</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody id="cTabla">
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./validaciones.js"></script>
+</body>
+
+</html>

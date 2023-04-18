@@ -1,0 +1,17 @@
+body {
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 37.72% 119.64%, #8fd4d9 0, #0999a3 50%, #004b6e 100%);
+}
+
+
+th  {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#tabla {
+    height: 250px;
+    overflow: auto;
+}
